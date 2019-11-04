@@ -1,0 +1,36 @@
+
+$mobile_size : 370;
+$laptop_size : 1020;
+
+.nav ul {
+  margin: 0px;
+  padding: 0px;
+  background: tomato;
+  list-style:none;
+  flex-flow: column wrap;
+}
+
+.nav a {
+  padding: 1em;
+  display: block;
+  text-align:center;
+  text-decoration: none;
+}
+
+
+.nav ul {
+  display: flex; /*1*/
+  flex-direction : row; /*2*/
+  justify-content: center; /*3*/
+  @media(min-width: $laptop_size) {
+
+    .nav ul {
+      margin: 0px;
+      padding: 0px;
+      background: tomato;
+      list-style:none;
+      flex-flow: row;
+    }
+
+  }
+}

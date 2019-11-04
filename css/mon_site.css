@@ -1,0 +1,43 @@
+.nav ul {
+  margin: 0px;
+  padding: 0px;
+  background: tomato;
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-flow: column wrap;
+}
+
+.nav a {
+  padding: 1em;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: flex;
+  /*1*/
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  /*2*/
+  -webkit-box-pack: center;
+          justify-content: center;
+  /*3*/
+}
+
+@media (min-width: 1020) {
+  .nav ul .nav ul {
+    margin: 0px;
+    padding: 0px;
+    background: tomato;
+    list-style: none;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-flow: row;
+  }
+}
+
+/*# sourceMappingURL=mon_site.css.map */
